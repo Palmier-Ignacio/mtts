@@ -1,25 +1,69 @@
 
 <section class="producto-page">
   <div class="prod-img">
-    <img src= "/img/producto/<%= producto.imagen %>" alt="<%= producto.nombre %>">
+    <img class="prod-imagen" src="/img/producto/<%= producto.imagen %>" alt="<%= producto.nombre %>">
   </div>
   <div class="prod-info-container">
     <div class="prod-info">
-        <h1 class="prod-title"> <%= producto.nombre %> </h1>
-        <div class="prod-table">
-            <table></table>
-        </div>
-        <div class="prod-button">
-            <a href=""><i class="fa fa-whatsapp"></i>Consultar por este producto</a>
-        </div>
+      <h1 class="prod-title"><%= producto.nombre %></h1>
+      <% if (producto.comentario) { %>
+        <p class="prod-notes">* : <%= producto.comentario %></p>
+      <% } %>
+      <div class="prod-table">
+        <table>
+          <thead>
+            <tr>
+              <th class="code-table">Código</th>
+              <th class="desc-table">Descripción</th>
+              <th class="cant-table">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% producto.variantes.forEach(item => { %>
+              <tr>
+                <td class="code-item"><%= item.codigo || '' %></td>
+                <td class="desc-item"><%= item.descripcion %></td>
+                <td class="cant-item"><%= item.cantidad %></td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+      <div class="prod-button">
+        <a class="btn" href=""><i class="fa fa-whatsapp"></i>Consultar por este producto</a>
+      </div>
     </div>
   </div>
-  
 </section>
 
-<section class="related-prods">
-    <!-- Aca va el listado de relacionados -->
+<section class="categoria-page">
+  <h2>Productos relacionados</h2>
+  <div class="grid-cards">
+    <% related.forEach(prod=> { %>
+      <article class="card prod-card">
+        <div class="card-content">
+          <img src="/img/producto/<%= prod.imagen %>" alt="<%= prod.nombre %>">
+          <div class="card-info">
+            <h3>
+              <%= prod.nombre %>
+            </h3>
+            <p>
+              <%= prod.nombre %>
+            </p>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="/producto/<%= prod.categoria%>/<%= prod.id %>" class="btn -info">Más Info</a>
+          <a href="/categoria/<%= prod.nombre %>" class="btn -consulta"><i class="fa fa-whatsapp"></i>Consultar</a>
+        </div>
+      </article>
+    <% }) %>
+  </div>
 </section>
+
+
+
+
 
 <section class="calidad">
   <article class="section-container">

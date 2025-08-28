@@ -4,105 +4,351 @@ const productos = [
     nombre: "Bulones Cameros",
     descripcion: "Zincado Dorado",
     id: "bulones-cameros",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "28", descripcion: "Bulón camero zincado 5/16 x 70", cantidad: 1000 },
+      { codigo: "29", descripcion: "Bulón camero zincado 5/16 x 80", cantidad: 500 },
+      { codigo: "30", descripcion: "Bulón camero zincado 5/16 x 90", cantidad: 500 },
+      { codigo: "31", descripcion: "Bulón camero zincado 5/16 x 100", cantidad: 500 },
+      { codigo: "32", descripcion: "Bulón camero zincado 5/16 x 105 *", cantidad: 500 },
+      { codigo: "33", descripcion: "Bulón camero zincado 5/16 x 110", cantidad: 500 },
+      { codigo: "34", descripcion: "Bulón camero zincado 5/16 x 120", cantidad: 500 },
+      { codigo: "35", descripcion: "Bulón camero zincado 5/16 x 125", cantidad: 500 },
+      { codigo: "36", descripcion: "Bulón camero zincado 5/16 x 130", cantidad: 500 },
+      { codigo: "37", descripcion: "Bulón camero zincado 5/16 x 140", cantidad: 500 },
+      { codigo: "38", descripcion: "Bulón camero zincado 5/16 x 150", cantidad: 500 },
+      { codigo: "39", descripcion: "Bulón camero zincado 5/16 x 160", cantidad: 500 },
+      { codigo: "40", descripcion: "Bulón camero zincado 5/16 x 170", cantidad: 500 },
+      { codigo: "41", descripcion: "Bulón camero zincado 5/16 x 175", cantidad: 500 },
+      { codigo: "56", descripcion: "Arandelas 5/16 zincado", cantidad: 500 },
+      { codigo: "57", descripcion: "Tuercas 5/16 cuadradas naturales", cantidad: 500 }
+    ]
   },
   {
     imagen: "allen_chata.jpg",
     nombre: "Tornillos Allen Chata",
     descripcion: "Cabeza Chata",
     id: "tornillos-allen-chata",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    comentario: "Desarrollos bajo pedidos Tratamiento superficiales: Zincado Dorado - Pavonado Negro Zincado Blanco solamente Bajo pedidos especiales",
+    variantes: [
+      { codigo: "–", descripcion: "Tornillo allen chata 1/4 x 1 (25,4 mm) *", cantidad: 2500 },
+      { codigo: "–", descripcion: "Tornillo allen chata 1/4 x 1 1/4 (32 mm) *", cantidad: 2500 },
+      { codigo: "1300", descripcion: "Tornillo allen chata 1/4 x 1 1/2 (40 mm)", cantidad: 2500 },
+      { codigo: "1055", descripcion: "Tornillo allen chata 1/4 x 1 3/4 (45 mm)", cantidad: 2000 },
+      { codigo: "248 - 1094", descripcion: "Tornillo allen chata 1/4 x 2 (50 mm)", cantidad: 2000 },
+      { codigo: "42 - 4 - 1248", descripcion: "Tornillo allen chata 1/4 x 2 1/4 (60 mm)", cantidad: 1000 },
+      { codigo: "218 - 1", descripcion: "Tornillo allen chata 1/4 x 2 3/4 (70 mm)", cantidad: 1000 },
+      { codigo: "160 - 126", descripcion: "Tornillo allen chata 1/4 x 3 (76 mm)", cantidad: 1000 },
+      { codigo: "60 - 69 - 651", descripcion: "Tornillo allen chata 1/4 x 3 1/4 (80 mm)", cantidad: 1000 },
+      { codigo: "64 - 82 - 1092", descripcion: "Tornillo allen chata 1/4 x 3 3/4 (90 mm)", cantidad: 1000 },
+      { codigo: "198 - 113", descripcion: "Tornillo allen chata 1/4 x 95 mm", cantidad: 1000 },
+      { codigo: "23 - 173 - 687", descripcion: "Tornillo allen chata 1/4 x 4 (100 mm)", cantidad: 1000 },
+      { codigo: "642 - 2", descripcion: "Tornillo allen chata 1/4 x 4 1/4 (110 mm)", cantidad: 1000 },
+      { codigo: "87 - 24 - 720", descripcion: "Tornillo allen chata 1/4 x 4 3/4 (120 mm)", cantidad: 1000 },
+      { codigo: "136", descripcion: "Tornillo allen chata 1/4 x 5 (130 mm)", cantidad: 500 },
+      { codigo: "468 - 681 - 797", descripcion: "Tornillo allen chata 1/4 x 5 1/2 (140 mm)", cantidad: 500 },
+      { codigo: "109 - 193", descripcion: "Tornillo allen chata 1/4 x 6 (150 mm)", cantidad: 500 },
+      { codigo: "1365 - 58 - 1366", descripcion: "Tornillo allen chata 1/4 x 6 3/4 (170 mm)", cantidad: 500 },
+    ]
   },
   {
     imagen: "arandelas.jpg",
     nombre: "Tuercas y Arandelas",
     descripcion: "Variantes de diámetros y terminaciones",
     id: "tuercas-y-arandelas",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "3", descripcion: "Tuerca 1/4 PVC", cantidad: 1000 },
+      { codigo: "1291", descripcion: "Tuerca 1/4 PVC Media Luna", cantidad: 1000 },
+      { codigo: "312", descripcion: "Tuerca 1/4 cuadrada (11×11×4,75 mm) Natural", cantidad: 2000 },
+      { codigo: "1083", descripcion: "Tuerca 1/4 cuadrada (15×15×4,75 mm) Natural", cantidad: 1000 },
+      { codigo: "175", descripcion: "Tuerca 1/4 cuadrada (11×11×4,75 mm) Negras", cantidad: 2000 },
+      { codigo: "89", descripcion: "Tuerca 1/4 cuadrada (15×15×4,75 mm) Negras", cantidad: 1000 },
+      { codigo: "125", descripcion: "Tuerca 1/4 cuadrada (11×11×3,8 mm) Estampada Natural", cantidad: 2000 },
+      { codigo: "123", descripcion: "Tuerca 1/4 hexagonal Natural", cantidad: 1000 },
+      { codigo: "72", descripcion: "Tuerca 1/4 hexagonal Zincada Dorada/Blanca", cantidad: 1000 },
+      { codigo: "130", descripcion: "Tuerca 5/16 hexagonal Natural", cantidad: 500 },
+      { codigo: "731", descripcion: "Tuerca 5/16 hexagonal Zincado Dorada/Blanca", cantidad: 500 },
+      { codigo: "57", descripcion: "Tuerca 5/16 cuadrada Natural", cantidad: 500 },
+      { codigo: "5", descripcion: "Tuerca 1/4-20 Media Luna de Zamak Ø 26", cantidad: 500 },
+      { codigo: "1616", descripcion: "Tuerca 1/4-20 Mini Luna de Zamak Ø 18", cantidad: 500 },
+      { codigo: "75", descripcion: "Tuerca 1/4 para enclavar zinc. Blanca", cantidad: 2000 },
+      { codigo: "232", descripcion: "Arandelas 1/4 zincadas Doradas", cantidad: 1000 },
+      { codigo: "437", descripcion: "Arandelas 1/4 zincadas Blancas", cantidad: 1000 },
+      { codigo: "56", descripcion: "Arandelas 5/16 zincadas Doradas", cantidad: 500 },
+      { codigo: "511", descripcion: "Arandelas 5/16 zincadas Blancas", cantidad: 500 }
+    ]
   },
   {
     imagen: "fix.jpg",
     nombre: "Tornillos Fix",
     descripcion: "Ø de 3,5 – 5 mm, largo de 12 – 60 mm",
     id: "tornillos-fix",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "604", descripcion: "Ø 3,5 mm – Largo 12 mm", cantidad: 10000 },
+      { codigo: "594", descripcion: "Ø 3,5 mm – Largo 16 mm", cantidad: 10000 },
+      { codigo: "249", descripcion: "Ø 3,5 mm – Largo 20 mm", cantidad: 10000 },
+      { codigo: "318", descripcion: "Ø 3,5 mm – Largo 25 mm", cantidad: 10000 },
+      { codigo: "195", descripcion: "Ø 3,5 mm – Largo 30 mm", cantidad: 10000 },
+      { codigo: "250", descripcion: "Ø 3,5 mm – Largo 35 mm", cantidad: 5000 },
+      { codigo: "227", descripcion: "Ø 3,5 mm – Largo 40 mm", cantidad: 5000 },
+      { codigo: "589", descripcion: "Ø 3,5 mm – Largo 45 mm", cantidad: 5000 },
+      { codigo: "590", descripcion: "Ø 3,5 mm – Largo 50 mm", cantidad: 5000 },
+      { codigo: "591", descripcion: "Ø 3,5 mm – Largo 60 mm", cantidad: 5000 },
+      { codigo: "1561", descripcion: "Ø 4 mm – Largo 12 mm", cantidad: 10000 },
+      { codigo: "462", descripcion: "Ø 4 mm – Largo 16 mm", cantidad: 10000 },
+      { codigo: "581", descripcion: "Ø 4 mm – Largo 20 mm", cantidad: 10000 },
+      { codigo: "463", descripcion: "Ø 4 mm – Largo 25 mm", cantidad: 10000 },
+      { codigo: "653", descripcion: "Ø 4 mm – Largo 30 mm", cantidad: 10000 },
+      { codigo: "257", descripcion: "Ø 4 mm – Largo 35 mm", cantidad: 5000 },
+      { codigo: "253", descripcion: "Ø 4 mm – Largo 40 mm", cantidad: 5000 },
+      { codigo: "349", descripcion: "Ø 4 mm – Largo 45 mm", cantidad: 5000 },
+      { codigo: "228", descripcion: "Ø 4 mm – Largo 50 mm", cantidad: 5000 },
+      { codigo: "735", descripcion: "Ø 4 mm – Largo 60 mm", cantidad: 5000 },
+      { codigo: "758", descripcion: "Ø 4,5 mm – Largo 25 mm", cantidad: 10000 },
+      { codigo: "730", descripcion: "Ø 4,5 mm – Largo 30 mm", cantidad: 10000 },
+      { codigo: "596", descripcion: "Ø 4,5 mm – Largo 35 mm", cantidad: 5000 },
+      { codigo: "608", descripcion: "Ø 4,5 mm – Largo 40 mm", cantidad: 5000 },
+      { codigo: "597", descripcion: "Ø 4,5 mm – Largo 45 mm", cantidad: 5000 },
+      { codigo: "431", descripcion: "Ø 4,5 mm – Largo 50 mm", cantidad: 5000 },
+      { codigo: "330", descripcion: "Ø 4,5 mm – Largo 60 mm", cantidad: 5000 },
+      { codigo: "334", descripcion: "Ø 4,5 mm – Largo 70 mm", cantidad: 5000 },
+      { codigo: "Ø 5 mm – Largo 16 mm", descripcion: "Ø 5 mm – Largo 16 mm", cantidad: 10000 },
+      { codigo: "Ø 5 mm – Largo 20 mm", descripcion: "Ø 5 mm – Largo 20 mm", cantidad: 10000 },
+      { codigo: "Ø 5 mm – Largo 25 mm", descripcion: "Ø 5 mm – Largo 25 mm", cantidad: 10000 },
+      { codigo: "1082", descripcion: "Ø 5 mm – Largo 30 mm", cantidad: 10000 },
+      { codigo: "313", descripcion: "Ø 5 mm – Largo 35 mm", cantidad: 5000 },
+      { codigo: "335", descripcion: "Ø 5 mm – Largo 40 mm", cantidad: 5000 },
+      { codigo: "757", descripcion: "Ø 5 mm – Largo 45 mm", cantidad: 5000 },
+      { codigo: "183", descripcion: "Ø 5 mm – Largo 50 mm", cantidad: 5000 },
+      { codigo: "539", descripcion: "Ø 5 mm – Largo 60 mm", cantidad: 5000 }
+    ]
   },
   {
     imagen: "fix_largos.jpg",
     nombre: "Tornillos Fix Largos / Tipo 17",
     descripcion: "Variantes de diámetro, largo y puntas",
-    id: "tornillos-fix-largos-/-tipo-17",
-    categoria: "tornillos-fijaciones-madera"
+    id: "tornillos-fix-largos-tipo-17",
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "664", descripcion: "Tornillos Fix Ø 5 mm Largo 70 mm", cantidad: 300 },
+      { codigo: "613", descripcion: "Tornillos Fix Ø 5 mm Largo 80 mm", cantidad: 300 },
+      { codigo: "663", descripcion: "Tornillos Fix Ø 5 mm Largo 90 mm", cantidad: 300 },
+      { codigo: "486", descripcion: "Tornillos Fix Ø 5 mm Largo 100 mm", cantidad: 300 },
+      { codigo: "487", descripcion: "Tornillos Fix Ø 5 mm Largo 110 mm", cantidad: 200 },
+      { codigo: "490", descripcion: "Tornillos Fix Ø 5 mm Largo 120 mm", cantidad: 200 },
+      { codigo: "1122", descripcion: "Tornillos Fix Ø 6 mm Largo 100 mm", cantidad: 200 },
+      { codigo: "1182", descripcion: "Tornillos Fix Ø 6 mm Largo 110 mm", cantidad: 200 },
+      { codigo: "1123", descripcion: "Tornillos Fix Ø 6 mm Largo 120 mm", cantidad: 200 },
+      { codigo: "1183", descripcion: "Tornillos Fix Ø 6 mm Largo 130 mm", cantidad: 100 },
+      { codigo: "1124", descripcion: "Tornillos Fix Ø 6 mm Largo 140 mm", cantidad: 100 },
+      { codigo: "1125", descripcion: "Tornillos Fix Ø 6 mm Largo 150 mm", cantidad: 100 },
+      { codigo: "1375", descripcion: "Tornillos Fix Ø 6 mm Largo 160 mm", cantidad: 100 },
+      { codigo: "1329", descripcion: "Tornillo P14-10 cabeza hexagonal/arandela Punta Mecha x 2\"", cantidad: 1500 },
+      { codigo: "1330", descripcion: "Tornillo P14-10 cabeza hexagonal/arandela Punta Mecha x 2 ½\"", cantidad: 1000 },
+      { codigo: "1382", descripcion: "Tornillo P14-10 cabeza hexagonal/arandela Punta Mecha x 3\"", cantidad: 500 },
+      { codigo: "1279", descripcion: "Tornillos Tipo 17 con corte (sin arandela de goma) x 2\"", cantidad: 1500 },
+      { codigo: "1281", descripcion: "Tornillos Tipo 17 con corte (sin arandela de goma) x 2 ½\"", cantidad: 1000 },
+      { codigo: "1381", descripcion: "Tornillos Tipo 17 con corte (sin arandela de goma) x 3\"", cantidad: 500 },
+      { codigo: "1322", descripcion: "Arandela de Goma", cantidad: 1000 },
+      { codigo: "1388", descripcion: "Arandela vulcanizada", cantidad: 1000 }
+    ]
   },
   {
     imagen: "drywall_1.jpg",
     nombre: "Tornillos Drywall",
     descripcion: "Variantes de largos y diámetros",
     id: "tornillos-drywall",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    comentario:"Alternativas de colores: Blanca, crema, haya, negro, gris, tostado y marrón.",
+    variantes: [
+      { codigo: "1320", descripcion: "Torn 8 x 1\"¼ Drywall (32 mm)", cantidad: 5000 },
+      { codigo: "1256", descripcion: "Torn 8 x 1\"½ Drywall (38 mm)", cantidad: 5000 },
+      { codigo: "955", descripcion: "Torn 8 x 1\"5/8 Drywall (41 mm)", cantidad: 5000 },
+      { codigo: "1070", descripcion: "Torn 8 x 1\"¾ Drywall (44 mm)", cantidad: 5000 },
+      { codigo: "599", descripcion: "Torn 8 x 2\" Drywall (51 mm)", cantidad: 2500 },
+      { codigo: "867", descripcion: "Torn 8 x 2\"¼ Drywall (57 mm)", cantidad: 2500 },
+      { codigo: "829", descripcion: "Torn 8 x 2\"½ Drywall (63 mm)", cantidad: 2000 },
+      { codigo: "741", descripcion: "Torn 8 x 3\" Drywall (76 mm)", cantidad: 1000 }
+    ]
   },
   {
     imagen: "allen_confirmat.jpg",
     nombre: "Tornillos Ensambladores",
     descripcion: "Allen Confirmat",
     id: "tornillos-ensambladores",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "327", descripcion: "Tornillo 6 x 10 Phillips TIPO EURO zincado blanco", cantidad: 10000 },
+      { codigo: "1352", descripcion: "Ensamble 5 x 50 allen cementado negro", cantidad: 2500 },
+      { codigo: "672", descripcion: "Ensamble 7 x 40 allen natural", cantidad: 2500 },
+      { codigo: "451", descripcion: "Ensamble 7 x 40 allen zinc azul", cantidad: 2500 },
+      { codigo: "956", descripcion: "Ensamble 7 x 40 pavonado", cantidad: 2500 },
+      { codigo: "197", descripcion: "Ensamble 7 x 45 wash PH zinc blanco", cantidad: 2000 },
+      { codigo: "674", descripcion: "Ensamble 7 x 50 allen natural", cantidad: 2000 },
+      { codigo: "141", descripcion: "Ensamble 7 x 50 allen amarillo", cantidad: 2000 },
+      { codigo: "634", descripcion: "Ensamble 7 x 50 allen azul", cantidad: 2000 },
+      { codigo: "426", descripcion: "Ensamble 7 x 50 allen pavonado", cantidad: 2000 },
+      { codigo: "682", descripcion: "Ensamble 7 x 50 PH natural", cantidad: 2000 },
+      { codigo: "683", descripcion: "Ensamble 7 x 60 allen natural", cantidad: 2000 },
+      { codigo: "888", descripcion: "Ensamble 7 x 60 allen pavonado", cantidad: 2000 },
+      { codigo: "785", descripcion: "Ensamble 7 x 70 allen natural", cantidad: 1500 },
+      { codigo: "657", descripcion: "Ensamble 7 x 70 allen negro", cantidad: 1500 },
+      { codigo: "153", descripcion: "Tapas plásticas para ensambles", cantidad: 5000 }
+    ]
   },
   {
     imagen: "llave_allen.jpg",
     nombre: "Llaves Allen",
     descripcion: "Puntas e insertos Allen y Phillips",
     id: "llaves-allen",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "1472", descripcion: "Llaves allen 3 mm con trat. térmico (1010) zincada", cantidad: 2000 },
+      { codigo: "92", descripcion: "Llaves allen 4 mm con trat. térmico (1010) zincada", cantidad: 2000 },
+      { codigo: null, descripcion: "Llaves allen 4,75 mm con trat. térmico (1010) zincada", cantidad: 2000 },
+      { codigo: null, descripcion: "Llaves allen 5 mm con trat. térmico (1010) zincada", cantidad: 2000 },
+      { codigo: null, descripcion: "Insertos Phillips no 1 encastre 1/4\" – Largo 25 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Insertos Phillips no 2 encastre 1/4\" – Largo 25 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Insertos Phillips no 3 encastre 1/4\" – Largo 25 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Punta Phillips no 1 encastre 1/4\" – Largo 50 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Punta Phillips no 2 encastre 1/4\" – Largo 50 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Punta Phillips no 2 encastre 1/4\" – Largo 50 mm", cantidad: 100 },
+      { codigo: null, descripcion: "Inserto Allen hexagonal 4,00 mm (5/32\") – Largo 25 mm", cantidad: 100 }
+    ]
   },
   {
     imagen: "soportes.jpg",
     nombre: "Soportes",
     descripcion: "Soportes, pernos, ménsulas, bisagras, arandelas, roller y estructurales",
     id: "soportes",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "184", descripcion: "Arandelas Ø 8 mm negras", cantidad: 1000 },
+      { codigo: "150", descripcion: "Roller", cantidad: 500 },
+      { codigo: "53", descripcion: "Estructural 5 x 40 Flangeado Phillips – Pavonado", cantidad: 2500 },
+      { codigo: "25", descripcion: "Estructural 5 x 50 Flangeado Phillips – Negro", cantidad: 2500 },
+      { codigo: "1076", descripcion: "Estructural 5 x 50 Flangeado Phillips – Zinc Dorado", cantidad: 2500 },
+      { codigo: "1227", descripcion: "Estructural 5 x 60 Flangeado Phillips – Zincado", cantidad: 2000 },
+      { codigo: "1226", descripcion: "Estructural 5 x 70 Flangeado Phillips – Zinc Dorado – Negro", cantidad: 1500 },
+      { codigo: "893", descripcion: "Tornillo 3,5 x 13 Cabeza Flangeada – Zinc Dorado", cantidad: 5000 }
+    ]
   },
   {
     imagen: "soportes_invisibles.jpg",
     nombre: "Soportes Invisibles",
     descripcion: "Kits de soporte, arandelas y tarugos",
     id: "soportes-invisibles",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "Kit 100/150", descripcion: "Kit Soporte Invisible Hexagonal de 10 mm x 100/150 mm (2 soportes, 2 arandelas 1/4 zincadas, 2 tarugos No 10) – embalados por 50 u.", cantidad: 50 },
+      { codigo: "Kit 150/200", descripcion: "Kit Soporte Invisible Hexagonal de 10 mm x 150/200 mm (2 soportes, 2 arandelas 1/4 zincadas, 2 tarugos No 10)", cantidad: 50 },
+      { codigo: "Kit 200/250", descripcion: "Kit Soporte Invisible Hexagonal de 10 mm x 200/250 mm (2 soportes, 2 arandelas 1/4 zincadas, 2 tarugos No 10)", cantidad: 50 }
+    ]
   },
   {
     imagen: "kit_futones.jpg",
     nombre: "Kits para Futones",
     descripcion: "Perno, chavetas R, arandelas, roller",
     id: "kits-para-futones",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "Kit Futones", descripcion: "Perno 8 x 52 c/agujero, chavetas R, arandelas, roller. Tratamiento superficial: pavonado", cantidad: null }
+    ]
   },
   {
     imagen: "cabezaredonda_cuello_cuadrado.jpg",
     nombre: "Bulones",
     descripcion: "Cabeza redonda, cuello cuadrado (3/8 – 5/16)",
     id: "bulones",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    comentario:"Desarrollo bajo pedidos",
+    variantes: [
+      { codigo: "925", descripcion: 'Bulón 3/8 x 1" (25 mm) cuello cuadrado zinc', cantidad: 1000 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 1¼" (32 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 1½" (38 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 1¾" (44 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 2" (50 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 2¼" (56 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: "1139", descripcion: 'Bulón 3/8 x 2½" (63 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 2¾" (70 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: "1152", descripcion: 'Bulón 3/8 x 3" (75 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 3¼" (82 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 3½" (90 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: "1036", descripcion: 'Bulón 3/8 x 4" (100 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 4¼" (110 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: "1042", descripcion: 'Bulón 3/8 x 4½" (115 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: "1264/1087", descripcion: 'Bulón 3/8 x 5" (127 mm) cuello cuadrado zinc', cantidad: 500 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 5½" (140 mm) cuello cuadrado zinc', cantidad: 250 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 6" (155 mm) cuello cuadrado zinc', cantidad: 250 },
+      { codigo: "926", descripcion: 'Bulón 3/8 x 7" (175 mm) cuello cuadrado zinc', cantidad: 250 },
+      { codigo: "1089", descripcion: 'Bulón 3/8 x 8" (200 mm) cuello cuadrado zinc', cantidad: 250 },
+      { codigo: "1043", descripcion: 'Bulón 3/8 x 9" (229 mm) cuello cuadrado zinc', cantidad: 250 },
+      { codigo: null, descripcion: 'Bulón 3/8 x 10" (254 mm) cuello cuadrado zinc', cantidad: 250 },
+    ]
   },
   {
     imagen: "tirafondo.jpg",
     nombre: "Tirafondos",
     descripcion: "Cabeza hexagonal (3/16 – 1/4 – 5/16 – 3/8)",
     id: "tirafondos",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: null, descripcion: "3/8\" – 2 1/2\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 2 3/4\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 3\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 3 1/2\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 4\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 4 1/2\"", cantidad: 1000 },
+      { codigo: null, descripcion: "3/8\" – 5\"", cantidad: 1000 }
+    ]
   },
   {
     imagen: "tarugos.jpg",
     nombre: "Tarugos Plásticos",
     descripcion: "Para ladrillos macizos y huecos",
     id: "tarugos-plasticos",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: null, descripcion: "Tarugo No 5 para ladrillo macizo", cantidad: 35000 },
+      { codigo: "1020", descripcion: "Tarugo No 6", cantidad: 2000 },
+      { codigo: "1021", descripcion: "Tarugo No 8", cantidad: 10000 },
+      { codigo: null, descripcion: "Tarugo No 10", cantidad: 5000 },
+      { codigo: null, descripcion: "Tarugo No 12", cantidad: 3000 },
+      { codigo: null, descripcion: "Tarugo con tope No 5", cantidad: 25000 },
+      { codigo: "983", descripcion: "Tarugo con tope No 6", cantidad: 16000 },
+      { codigo: "984", descripcion: "Tarugo con tope No 8", cantidad: 8000 },
+      { codigo: "1023", descripcion: "Tarugo con tope No 10", cantidad: 4000 },
+      { codigo: null, descripcion: "Tarugo universal No 6", cantidad: 16000 },
+      { codigo: null, descripcion: "Tarugo universal No 8", cantidad: 6000 },
+      { codigo: null, descripcion: "Tarugo universal No 10", cantidad: 4000 },
+      { codigo: null, descripcion: "Tarugo universal No 6 con tope", cantidad: 10000 },
+      { codigo: null, descripcion: "Tarugo universal No 8 con tope", cantidad: 5000 },
+      { codigo: null, descripcion: "Tarugo universal No 10 con tope", cantidad: 3000 }
+    ]
   },
   {
     imagen: "varillas_roscadas.jpg",
     nombre: "Varillas Roscadas",
     descripcion: "Acero 1010, rosca UNC zincadas",
     id: "varillas-roscadas",
-    categoria: "tornillos-fijaciones-madera"
+    categoria: "tornillos-fijaciones-madera",
+    variantes: [
+      { codigo: "405", descripcion: "3/16\" (4,76 mm) – Hilos por pulgada: 24", cantidad: 150 },
+      { codigo: "406", descripcion: "1/4\" (6,35 mm) – Hilos por pulgada: 20", cantidad: 75 },
+      { codigo: "407", descripcion: "5/16\" (7,94 mm) – Hilos por pulgada: 18", cantidad: 65 },
+      { codigo: "408", descripcion: "3/8\" (9,52 mm) – Hilos por pulgada: 16", cantidad: 40 },
+      { codigo: "774", descripcion: "7/16\" (11,11 mm) – Hilos por pulgada: 14", cantidad: 30 },
+      { codigo: "409", descripcion: "1/2\" (12,7 mm) – Hilos por pulgada: 12", cantidad: 25 },
+      { codigo: null, descripcion: "1/2\" (12,7 mm) – Hilos por pulgada: 13", cantidad: 25 },
+      { codigo: "1059", descripcion: "9/16\" (14,29 mm) – Hilos por pulgada: 12", cantidad: 15 },
+      { codigo: null, descripcion: "5/8\" (15,88 mm) – Hilos por pulgada: 11", cantidad: 15 },
+      { codigo: "1060", descripcion: "3/4\" (19,05 mm) – Hilos por pulgada: 10", cantidad: 10 },
+      { codigo: "1061", descripcion: "7/8\" (22,22 mm) – Hilos por pulgada: 9", cantidad: 8 },
+      { codigo: null, descripcion: "1\" (25,4 mm) – Hilos por pulgada: 8", cantidad: 5 }
+    ]
   }
 ];
 
