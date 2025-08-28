@@ -1,0 +1,36 @@
+<nav class="navbar">
+  
+  <ul class="nav-links">
+    <li class="logo">
+      <a href="/" class="home-logo">
+        <img src="/img/logo.png" alt="Logo de la empresa" class="logo-img">
+      </a>
+    </li>
+
+    <li class="dropdown">
+      <a class="dropdown-button">Productos <i class="fa fa-caret-down"></i></a>
+      <ul class="submenu">
+        <% categories.forEach(c=> { %>
+          <li><a href="/categoria/<%= c.id %>">
+              <%= c.title %>
+            </a></li>
+          <% }) %>
+      </ul>
+    </li>
+
+  </ul>
+
+  <ul class="contact-buttons">
+    <li>
+      <a href="tel:+5491112345678" class="call-button">
+        <i class="fa fa-phone"></i>11 2310-3773 
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/549111123103773?text=Hola,%20quiero%20hacer%20una%20consulta" target="_blank"
+        rel="noopener noreferrer" class="whatsapp-button">
+        <i class="fa fa-whatsapp"></i>Escribinos
+      </a>
+    </li>
+  </ul>
+</nav>

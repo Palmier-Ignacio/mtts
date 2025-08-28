@@ -1,0 +1,20 @@
+{
+  "name": "metalurgica-clone",
+  "version": "1.0.0",
+  "description": "Clon de Metalúrgica Tesei con Node.js, Express y EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

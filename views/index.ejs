@@ -1,0 +1,82 @@
+<section class="hero">
+</section>
+
+<section class="categorias">
+  <h1>Fábrica de tornillos y piezas de fijación
+    de alta calidad.</h1>
+  <div class="separator"></div>
+  <div class="grid-cards">
+    <% categories.forEach(cat=> { %>
+      <article class="card">
+        <div class="card-content">
+          <h3>
+            <%= cat.title %>
+          </h3>
+          <p>
+            <%= cat.description %>
+          </p>
+        </div>
+        <a href="/categoria/<%= cat.id %>" class="btn">Ver más</a>
+      </article>
+
+      <% }) %>
+  </div>
+</section>
+
+<section class="trayectoria">
+  <article class="section-container">
+    <img src="/img/metalurgica.jpeg" alt="">
+    <div class="section-information">
+      <h2>Metalúrgica Tesei S.A.</h2>
+      <p>Con más de 35 años en constante desarrollo e inversión con el objetivo de ofrecer soluciones de excelencia en
+        el
+        campo de elementos de fijación para distinto tipo de industrias. Nuestra fábrica, se ubica en Zona Oeste, en la
+        localidad de Hurlingham, Buenos Aires. Tanto la producción, como el depósito y logística de nuestros productos
+        están
+        ubicados estratégicamente para permitirnos atender clientes en todo el país.</p>
+    </div>
+  </article>
+</section>
+
+<section class="ambiental">
+  <article class="section-container">
+    <div class="section-information">
+      <h2>Política Ambiental</h2>
+      <p>Basados en la confianza y honestidad, nos preocupamos por el ambiente y afrontamos a los problemas ambientales
+        muy
+        responsablemente. Obedecemos cautelosamente las leyes de protección ambiental y reglas relacionadas impuestas al
+        área industrial. También promovemos las ideas entre nuestros personal lo cual incrementa su reconocimiento de
+        los
+        temas de protección ambiental y genera un sentimiento de responsabilidad hacia la conciencia ambiental.
+        Metalurgica
+        Tesei S.A. asume el desarrollo sostenible como un compromiso de gestión a partir de la legislación ambiental
+        vigente.
+      </p>
+    </div>
+    <img src="/img/green_mt.jpg" alt="">
+  </article>
+</section>
+
+<section class="contacto-form">
+  <article class="contacto">
+    <div class="form-map">
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4644.122239439185!2d-58.62801193535616!3d-34.60693466833332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9207a152c59%3A0xfb27aa10654c9b2b!2sMetal%C3%BArgica%20Tesei%20S.%20A.!5e0!3m2!1sen!2sar!4v1755649679135!5m2!1sen!2sar"
+          width="600px" height="520" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="form-contacto">
+        <h3>ESCRIBINOS!</h3>
+        <p>Estamos online para brindarte asesoramiento constante por dudas que surjan acerca de nuestros productos y sus respectivos usos.</p>
+        <form action="/contacto" method="post">
+          <input type="text" name="nombre" placeholder="Nombre" required class="name">
+          <input type="text" name="apellido" placeholder="Apellido" required class="name">
+          <input type="email-phone" name="email-phone" placeholder="Email / Teléfono" required>
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </article>
+</section>
