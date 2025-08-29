@@ -23,7 +23,33 @@
     <main>
       <%- body %>
     </main>
+
     <%- include('../partials/footer') %>
+      <script src="https://kit.fontawesome.com/74d01a45e5.js" crossorigin="anonymous"></script>
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("status") === "ok") {
+          const modal = document.getElementById("modal-ok");
+          const closeBtn = document.querySelector(".close");
+
+          modal.classList.add("show"); // lo mostramos
+
+          closeBtn.onclick = () => modal.style.display = "none";
+          window.onclick = (e) => {
+            if (e.target === modal) modal.style.display = "none";
+          };
+        } else if(urlParams.get("status") === "error"){
+          const modalError = document.getElementById("modal-error");
+          const closeBtnError = document.querySelector(".close");
+
+          modalError.classList.add("show"); // lo mostramos
+
+          closeBtnError.onclick = () => modalError.style.display = "none";
+          window.onclick = (e) => {
+            if (e.target === modalError) modalError.style.display = "none";
+          };
+        }
+      </script>
 </body>
 
 </html>

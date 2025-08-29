@@ -30,7 +30,7 @@
         </table>
       </div>
       <div class="prod-button">
-        <a class="btn" href=""><i class="fa fa-whatsapp"></i>Consultar por este producto</a>
+        <a class="btn" href="https://wa.me/5491123103773?text=Hola,%20quiero%20hacer%20una%20consulta%20sobre%20<%= producto.nombre %>"><i class="fa fa-whatsapp" target="_blank"></i>Consultar por este producto</a>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="buttons">
           <a href="/producto/<%= prod.categoria%>/<%= prod.id %>" class="btn -info">Más Info</a>
-          <a href="/categoria/<%= prod.nombre %>" class="btn -consulta"><i class="fa fa-whatsapp"></i>Consultar</a>
+          <a href="https://wa.me/5491123103773?text=Hola,%20quiero%20hacer%20una%20consulta%20sobre%20<%= prod.nombre %>" class="btn -consulta" target="_blank"><i class="fa fa-whatsapp"></i>Consultar</a>
         </div>
       </article>
     <% }) %>

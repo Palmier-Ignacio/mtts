@@ -57,7 +57,7 @@
   </article>
 </section>
 
-<section class="contacto-form">
+<section class="contacto-form" id="contacto">
   <article class="contacto">
     <div class="form-map">
       <div class="mapa">
@@ -69,10 +69,10 @@
       <div class="form-contacto">
         <h3>ESCRIBINOS!</h3>
         <p>Estamos online para brindarte asesoramiento constante por dudas que surjan acerca de nuestros productos y sus respectivos usos.</p>
-        <form action="/contacto" method="post">
+        <form action="/enviar" method="post">
           <input type="text" name="nombre" placeholder="Nombre" required class="name">
           <input type="text" name="apellido" placeholder="Apellido" required class="name">
-          <input type="email-phone" name="email-phone" placeholder="Email / Teléfono" required>
+          <input type="emailPhone" name="emailPhone" placeholder="Email / Teléfono" required>
           <textarea name="mensaje" placeholder="Mensaje" required></textarea>
           <button type="submit">Enviar</button>
         </form>
@@ -80,3 +80,19 @@
     </div>
   </article>
 </section>
+
+<div id="modal-ok" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2><i class="fa-solid fa-check"></i> Mensaje enviado</h2>
+    <p>Tu consulta fue enviada correctamente. En breve nos pondremos en contacto.</p>
+  </div>
+</div>
+
+<div id="modal-error" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2><i class="fa-solid fa-exclamation"></i> Mensaje no enviado</h2>
+    <p>Hubo un error en el envío del mensaje. Chequea los datos e intentalo de nuevo.</p>
+  </div>
+</div>
